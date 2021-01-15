@@ -1,4 +1,4 @@
-.sub {
+.sub .ver-mais {
     margin-top: 10px;
     width: 100%;
     height: 40%;
@@ -31,7 +31,6 @@ nav {
     margin-top: 10px;
     width: 470px;
     /* height: 307px; */
-    /* bottom: -470px; */
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -43,12 +42,17 @@ a .noticia {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
 }
 
+.sub label .ver-mais {
+    height: 150px;
+}
+
 label {
     margin-top: 20px;
     cursor: pointer;
     align-self: center;
     background-color: red;
     position: absolute;
+    z-index: 1;
 }
 
 a .noticia img {
@@ -89,3 +93,26 @@ a .ballonlateral p {
     cursor: pointer;
     align-self: center;
 } */
+
+#module {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#module p.collapse[aria-expanded="false"] {
+    display: block;
+    height: 3rem !important;
+    overflow: hidden;
+}
+
+#module p.collapse.show[aria-expanded="false"] {
+    height: 3rem !important;
+}
+
+#module a.collapsed:after {
+    content: '+ Show More';
+}
+
+#module a:not(.collapsed):after {
+    content: '- Show Less';
+}
