@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sidebar.css" />
     <link rel="stylesheet" href="ver-mais.css" />
 </head>
 
@@ -36,83 +38,78 @@
                 </a>
             </div>
 
-            <div class="sub" style="background-color: blue;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <img src="./img/buttonmore.svg" alt="button" /></a>
+            <div class="sub">
 
-                </label>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <div class="noticia"><img src="./img/BolsonaroDoria1.jpg" />
-                                    <div class="ballonlateral">
+                <div class="noticia"><img class="foto" src="./img/BolsonaroDoria1.jpg" />
+                    <div class="ballonlateral">
+                        <a href="">
+                            <h4>Título</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
+                            <a href=""><img src="./img/buttonmore.svg" alt="button" /></a>
+                        </a>
+                    </div>
 
-                                        <h4>Título</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
+                </div>
+                <div class="noticia"><img src="./img/Bolsonaro2.jpg" />
+                    <div class="ballonlateral">
+                        <a href="">
+                            <h4>Título</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
+                            <a href=""><img src="./img/buttonmore.svg" alt="button" /></a>
+                        </a>
+                    </div>
+                </div>
+                <div class="noticia"><img src="./img/BolsonaroDoria1.jpg" />
+                    <div class="ballonlateral">
+                        <a href="">
+                            <h4>Título</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
+                            <a href=""><img src="./img/buttonmore.svg" alt="button" /></a>
+                        </a>
+                    </div>
 
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="noticia"><img src="./img/Bolsonaro2.jpg" />
-                                    <div class="ballonlateral">
+                </div>
+                <div class="noticia"><img src="./img/Bolsonaro2.jpg" />
+                    <div class="ballonlateral">
+                        <a href="">
+                            <h4>Título</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
+                            <a href=""><img src="./img/buttonmore.svg" alt="button" /></a>
+                        </a>
+                    </div>
+                </div>
+                <div class="noticia no-show"><img src="./img/BolsonaroDoria1.jpg" />
+                    <div class="ballonlateral">
+                        <a href="">
+                            <h4>Título</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
+                            <a href=""><img src="./img/buttonmore.svg" alt="button" /></a>
+                        </a>
+                    </div>
 
-                                        <h4>Título</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
-
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="noticia"><img src="./img/BolsonaroDoria1.jpg" class="collapse" id="collapseExample" aria-expanded="false" />
-                                    <div class="ballonlateral">
-
-                                        <h4>Título</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
-
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="noticia"><img src="./img/Bolsonaro2.jpg" class="collapse" id="collapseExample" aria-expanded="false" />
-                                    <div class="ballonlateral">
-
-                                        <h4>Título</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
-
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                </div>
+                <div class="noticia no-show"><img src="./img/Bolsonaro2.jpg" />
+                    <div class="ballonlateral">
+                        <a href="">
+                            <h4>Título</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nulla non tellus malesuada volutpat. </p>
+                            <a href=""><img src="./img/buttonmore.svg" alt="button" /></a>
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <span class="show-more" href="">
+                        <img src="./img/buttonmore.svg" alt="button" />
+                    </span>
+                </div>
             </div>
-
 
         </div>
         <div class="sidebar"></div>
     </div>
-    <div id="module" class="container">
-        <h3>Bacon Ipsum</h3>
-        <p class="collapse" id="collapseExample" aria-expanded="false">
-            Bacon ipsum dolor amet doner picanha tri-tip biltong leberkas salami meatball tongue filet mignon landjaeger tail. Kielbasa salami tenderloin picanha spare ribs, beef ribs strip steak jerky cow. Pork chop chicken ham hock beef ribs turkey jerky. Shoulder
-            beef capicola doner, tongue tail sausage short ribs andouille. Rump frankfurter landjaeger t-bone, kielbasa doner ham hock shankle venison. Cupim capicola kielbasa t-bone, ball tip chicken andouille venison pork chop doner bacon beef ribs
-            kevin shankle. Short loin leberkas tenderloin ground round shank, brisket strip steak ham hock ham.
-        </p>
-        <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        </a>
     </div>
+
 </body>
 <script src="script.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>

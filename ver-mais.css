@@ -1,4 +1,9 @@
-.sub .ver-mais {
+a {
+    display: flex;
+    text-decoration: none;
+}
+
+.sub {
     margin-top: 10px;
     width: 100%;
     height: 40%;
@@ -6,73 +11,45 @@
     flex-wrap: wrap;
 }
 
-a {
-    display: flex;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-    top: -165%;
-    width: 100%;
-    position: absolute;
-}
-
-input[type="checkbox"] {
-    display: none;
-}
-
-input[type="checkbox"]:checked~nav {
-    transform: scale(940px);
-}
-
-nav {
-    background-color: rgba(16, 16, 16, .5);
+.sub .ver-mais {
     margin-top: 10px;
-    width: 470px;
-    /* height: 307px; */
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
 }
 
-a .noticia {
+.noticia {
+    width: auto;
+    height: 170px;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     margin-bottom: 25px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
 }
 
-.sub label .ver-mais {
-    height: 150px;
-}
-
-label {
-    margin-top: 20px;
-    cursor: pointer;
-    align-self: center;
-    background-color: red;
-    position: absolute;
-    z-index: 1;
-}
-
-a .noticia img {
+.noticia img {
     width: 200px;
     height: 135px;
     object-fit: cover;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transform: translate(100px, 0);
+    transition: width 0.5s, height 1s;
 }
 
-a .ballonlateral {
-    width: 430px;
+.ballonlateral {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
     height: 100%;
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-a .ballonlateral h4 {
+.ballonlateral h4 {
     color: #073267;
     font-size: 32px;
     font-weight: bold;
@@ -81,38 +58,46 @@ a .ballonlateral h4 {
     margin-top: 33px;
 }
 
-a .ballonlateral p {
+.ballonlateral p {
     font-weight: 300;
     margin-left: 150px;
     margin-right: 12px;
 }
 
+.ballonlateral a {
+    text-decoration: none !important;
+    display: block;
+}
 
-/* a {
-    margin-top: 20px;
+.ballonlateral img {
+    margin-left: 45px;
+    width: 20px;
+    height: 20px;
+}
+
+.sub .noticia:hover img {
+    width: 250px;
+    height: 190px;
+}
+
+.sub .noticia:hover a img {
+    width: 20px;
+    height: 20px
+}
+
+.container {
+    margin-left: 400px;
+}
+
+.no-show {
+    display: none;
+}
+
+.load-more {
+    display: flex;
+}
+
+.show-more {
     cursor: pointer;
     align-self: center;
-} */
-
-#module {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-#module p.collapse[aria-expanded="false"] {
-    display: block;
-    height: 3rem !important;
-    overflow: hidden;
-}
-
-#module p.collapse.show[aria-expanded="false"] {
-    height: 3rem !important;
-}
-
-#module a.collapsed:after {
-    content: '+ Show More';
-}
-
-#module a:not(.collapsed):after {
-    content: '- Show Less';
 }
